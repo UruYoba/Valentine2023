@@ -240,7 +240,7 @@ const valentineHtml = `<div class="wrapper">
       <span class="stamp"></span><p class="happy">Ради тебя я...</p>
     </div>
   </div>
-  <div class="card-back">
+  <div class="card-back" id="eren">
     <p class="card-bg">
       <span class="animated-fill">совершу<br>геноцид</span>
     </p>
@@ -254,6 +254,8 @@ function setValentine(){
   clearMain()
   setElementValue('style', valentineCss)
   document.getElementById('main').innerHTML = valentineHtml;
+  const eren = new Audio('eren.mp3')
+  document.getElementById('eren').addEventListener('mouseover', () => eren.play())
 }
 
 setTimeout(setValentine, 4000)
