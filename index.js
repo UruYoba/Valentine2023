@@ -131,7 +131,7 @@ const valentineCss = `@import url(https://fonts.googleapis.com/css?family=Almend
 }
 
 body {
-  background-color: #87F5FB;
+  background-color: #af2829;
   font-family: "Cardo", serif;
 }
 
@@ -142,7 +142,7 @@ body {
 
 .card, .card-bg {
   margin: 80px auto;
-  width: 600px;
+  width: 700px;
   height: 290px;
   background-color: #F0F0F0;
   position: relative;
@@ -152,7 +152,7 @@ body {
   content: "";
   z-index: -1;
   position: absolute;
-  width: 650px;
+  width: 750px;
   height: 340px;
   top: -25px;
   left: -25px;
@@ -237,12 +237,12 @@ const valentineHtml = `<div class="wrapper">
 <div class="card-container">
   <div class="card-front">
     <div class="card">
-      <span class="stamp"></span><p class="happy">happy valentine's day...</p>
+      <span class="stamp"></span><p class="happy">Ради тебя я...</p>
     </div>
   </div>
   <div class="card-back">
     <p class="card-bg">
-      <span class="animated-fill">no<br> one</span>
+      <span class="animated-fill">совершу<br>геноцид</span>
     </p>
   </div>
 </div>
