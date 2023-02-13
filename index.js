@@ -249,13 +249,14 @@ const valentineHtml = `<div class="wrapper">
 </div>`
 setElementValue('style', loaderCss)
 // document.getElementsByTagName('body')[0].onclick = () => {alert('fuck u')}
+const eren = new Audio('eren.mp3')
 
 function setValentine(){
   clearMain()
   setElementValue('style', valentineCss)
   document.getElementById('main').innerHTML = valentineHtml;
-  const eren = new Audio('eren.mp3')
-  document.getElementById('eren').addEventListener('mouseover', () => eren.play())
+  document.getElementById('eren').addEventListener('mouseover', () => document.getElementById('eren').click())
+  document.getElementById('eren').addEventListener('click', ()=> eren.play())
 }
 
 setTimeout(setValentine, 4000)
